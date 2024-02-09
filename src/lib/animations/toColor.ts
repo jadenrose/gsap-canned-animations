@@ -4,20 +4,16 @@ import { CannedAnimation } from '@types-internal/animations'
 import { getAnimatableChildren } from '@utils'
 
 const defaultVars: gsap.TweenVars = {
-  xPercent: -20,
-  opacity: 0,
+  color: '#ff0000',
   stagger: 0.1,
   duration: 0.5,
-  ease: gentleOvershoot,
+  ease: 'none',
 }
 
 const staggeredSlideFade: CannedAnimation = (target, vars = defaultVars) => {
   const tweenVars: gsap.TweenVars = { ...defaultVars, ...vars }
 
-  const animation = gsap.from(
-    getAnimatableChildren(target, ['xPercent', 'opacity']),
-    tweenVars,
-  )
+  const animation = gsap.to(getAnimatableChildren(target, ['color']), tweenVars)
 
   return animation
 }

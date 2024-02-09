@@ -3,5 +3,5 @@ export type CannedAnimationOptions = {}
 
 export type CannedAnimation = (
   target: CannedAnimationTarget,
-  options?: CannedAnimationOptions,
-) => {}
+  vars?: gsap.TweenVars,
+) => gsap.core.Tween

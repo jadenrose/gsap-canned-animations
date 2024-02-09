@@ -13,6 +13,8 @@
       "@types-internal/*": ["./src/types/*"],
       "@animations": ["src/lib/animations"],
       "@animations/*": ["src/lib/animations/*"],
+      "@timelines": ["src/lib/timelines"],
+      "@timelines/*": ["src/lib/timelines/*"],
       "@utils": ["src/lib/utils"],
       "@utils/*": ["src/lib/utils/*"],
       "@easing": ["src/lib/easing"],
