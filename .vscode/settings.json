@@ -1,7 +1,3 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
