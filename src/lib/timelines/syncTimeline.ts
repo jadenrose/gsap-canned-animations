@@ -1,20 +1,11 @@
 import * as animations from '@animations'
 import { CannedAnimationTarget } from '@types-internal/animations'
+import {
+  ChainAnimations,
+  TimelineAppendFunction,
+  TimelineReturn,
+} from '@types-internal/timelines'
 import gsap from 'gsap'
-
-type TimelineAppendFunction = (
-  timeline: gsap.core.Timeline,
-  animation: gsap.core.Tween,
-) => TimelineReturn
-
-type ChainAnimations = {
-  [chainAnimation in keyof typeof animations]: (
-    target: CannedAnimationTarget,
-    vars?: gsap.TweenVars,
-  ) => TimelineReturn
-}
-
-type TimelineReturn = ChainAnimations & {}
 
 const syncTimeline = (vars?: gsap.TimelineVars): TimelineReturn => {
   const timeline = gsap.timeline(vars)
