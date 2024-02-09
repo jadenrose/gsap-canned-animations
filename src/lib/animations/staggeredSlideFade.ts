@@ -11,7 +11,9 @@ const staggeredSlideFade: CannedAnimation = (target, options) => {
     ease: gentleOvershoot,
   })
 
-  return {}
+  return {
+    // stuff like reverse(), reset(), pause(), play()
+  }
 }
 
 export default staggeredSlideFade
