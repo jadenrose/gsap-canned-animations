@@ -1,6 +1,6 @@
-import { gentleOvershoot } from 'src/lib/easing'
+import { gentleOvershoot } from '@easing'
 import { CannedAnimation } from '@types-internal/animations'
-import { getAnimatableChildren } from 'src/lib/utils'
+import { getAnimatableChildren } from '@utils'
 import gsap from 'gsap'
 
 const staggeredSlideFade: CannedAnimation = (target, options) => {

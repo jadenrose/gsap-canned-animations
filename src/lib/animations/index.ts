@@ -1,1 +1,1 @@
-export { default as staggeredSlideFade } from './staggeredSlideFade'
+export { default as staggeredSlideFade } from "./staggeredSlideFade";
