@@ -1,0 +1,19 @@
+@mixin button-reset {
+  outline: none;
+  border: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background: none;
+  text-decoration: inherit;
+  display: inline-block;
+}
+
+@mixin hover {
+  &:hover:not(:active),
+  &:focus:not(:active) {
+    @content;
+  }
+}

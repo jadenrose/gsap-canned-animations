@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "sourceMap": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@types-internal": ["./src/types"],
+      "@types-internal/*": ["./src/types/*"],
+      "@animations": ["src/lib/animations"],
+      "@animations/*": ["src/lib/animations/*"],
+      "@utils": ["src/lib/utils"],
+      "@utils/*": ["src/lib/utils/*"],
+      "@easing": ["src/lib/easing"],
+      "@easing/*": ["src/lib/easing/*"]
+    }
+  }
+}
