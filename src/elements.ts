@@ -1,7 +1,7 @@
 const HERO = 'hero'
 const FIRST_DEMO = 'first-demo'
 
-const get = (id: string) => document.getElementById(id)
+const get = (id: string): HTMLElement | null => document.getElementById(id)
 
 export const sections = {
   HERO: get(HERO),

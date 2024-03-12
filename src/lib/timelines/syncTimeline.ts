@@ -11,10 +11,10 @@ const syncTimeline = (vars?: gsap.TimelineVars): TimelineReturn => {
   const timeline = gsap.timeline(vars)
 
   const chainAnimations: ChainAnimations = Object.entries(animations).reduce(
-    (a, [key, value]) => ({
+    (a, [animationName, animationFunction]) => ({
       ...a,
-      [key]: (target: CannedAnimationTarget, vars?: gsap.TweenVars) =>
-        appendAnimationToTimeline(timeline, value(target, vars)),
+      [animationName]: (target: CannedAnimationTarget, vars?: gsap.TweenVars) =>
+        appendAnimationToTimeline(timeline, animationFunction(target, vars)),
     }),
     {} as ChainAnimations,
   )
